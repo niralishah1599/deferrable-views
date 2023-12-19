@@ -1,0 +1,10 @@
+<div class="comment-section">
+    <p-button label="Show More" #postComment  [outlined]="true" [text]="true"></p-button>
+</div>
+
+@defer(on interaction(postComment)){
+    <p>{{description}}</p>
+}
+
+
+<!--on hover with timer not used -->

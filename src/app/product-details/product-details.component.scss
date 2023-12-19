@@ -1,0 +1,30 @@
+::ng-deep .p-card-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        width: initial;
+        height: 20rem;
+
+        img {
+            height: inherit;
+        }
+    }
+}
+
+:ng-deep .p-card {
+    flex: 1;
+    height: 30rem;
+    width: 10rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+}
+
+::ng-deep .p-card-footer {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
