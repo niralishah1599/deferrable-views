@@ -1,4 +1,4 @@
-<div class="grid grid-nogutter container">
+ <div class="grid grid-nogutter container">
   @for (post of post$  | async; track post.id) {
     <div class="col-12 sm:col-6 lg:col-12 xl:col-4 p-2">
       @defer(on viewport) {
@@ -14,12 +14,12 @@
       }@error {
         <p>error...</p>
       }
-    </div> 
+    </div>  
   }
-   
 </div>
 
-
+<!--On viewport () only load the content when they enters in viewport-->
 <!-- @placeholder (minimum 2000ms) -- to prevents the flickring issue. -->
-<!--  -->
+<!-- @loading set the network in fast 3G  -->
+<!-- @error chunk js failed for ex: to block a url-->
 

@@ -10,12 +10,11 @@ import { ButtonModule } from 'primeng/button';
 })
 export class ProductDescriptionComponent implements AfterViewInit{
   @Input({ required: true }) description!: any;
-
   ngOnInit(){
    
   }
 
   ngAfterViewInit() {
-    console.log('load post')
+    console.log('load description')
   }
 }

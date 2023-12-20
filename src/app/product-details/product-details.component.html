@@ -8,6 +8,12 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
     </p>
     <ng-template pTemplate="footer">
-        <app-product-description [description]="post.description"/>
+        <div class="comment-section">
+            <p-button label="Show More" #postComment  [outlined]="true" [text]="true"></p-button>
+        </div>
+       
+        @defer(on interaction(postComment)){
+            <app-product-description [description]="post.description"/>
+        }
     </ng-template>
 </p-card> 
